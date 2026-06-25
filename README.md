@@ -12,7 +12,6 @@
 ## overview
 **encore** is a lightweight background process for macOS that bridges Music.app and Discord's Rich Presence. it launches when Music opens, clears itself when Music quits, and updates the instant a track changes, pauses, or resumes — no polling, no timers spinning in the background eating your battery for no reason.
 
-it watches two things macOS already tells it about — app lifecycle and player state — and relays them to Discord. that's the whole program. no Electron, no bundled runtime, no background services beyond the one you asked for. it's built to sit at near-zero resource cost when idle and disappear the moment you don't need it, because this is something made to serve the person running it, not to hold their attention, harvest their data, or be sold to anyone.
 ---
 ## features
 ### presence
