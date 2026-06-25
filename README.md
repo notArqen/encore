@@ -91,4 +91,4 @@ rm ~/Library/LaunchAgents/com.user.applemusicdiscordrpc.plist
 ## license
 [Apache 2.0](LICENSE) — open, permissive, and honest about it.
 ---
-<p align="center">now playing, properly.</p>
+<p align="center">built with care.</p>
