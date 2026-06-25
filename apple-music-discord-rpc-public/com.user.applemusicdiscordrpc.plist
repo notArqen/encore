@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.user.applemusicdiscordrpc</string>
+
+    <!--
+      This file is a template. Run `python3 setup.py` from this project's
+      folder and it will generate a filled-in copy of this plist for you
+      automatically (correct Python interpreter path + correct project
+      path), and can optionally install + load it for you too.
+
+      If you'd rather fill it in by hand: replace PYTHON_EXECUTABLE_HERE with
+      the output of `which python3`, and PROJECT_DIRECTORY_HERE (both
+      places) with the absolute path to this project folder.
+    -->
+    <key>ProgramArguments</key>
+    <array>
+        <string>PYTHON_EXECUTABLE_HERE</string>
+        <string>PROJECT_DIRECTORY_HERE/main.py</string>
+    </array>
+
+    <!-- Start automatically at login -->
+    <key>RunAtLoad</key>
+    <true/>
+
+    <!-- Restart if it crashes, but don't fight you if you kill it on purpose
+         repeatedly within a short window (launchd handles throttling). -->
+    <key>KeepAlive</key>
+    <dict>
+        <key>SuccessfulExit</key>
+        <false/>
+    </dict>
+
+    <key>StandardOutPath</key>
+    <string>/tmp/applemusicdiscordrpc.out.log</string>
+    <key>StandardErrorPath</key>
+    <string>/tmp/applemusicdiscordrpc.err.log</string>
+
+    <key>WorkingDirectory</key>
+    <string>PROJECT_DIRECTORY_HERE</string>
+</dict>
+</plist>
